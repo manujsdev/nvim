@@ -13,7 +13,7 @@ Plug 'shinchu/lightline-gruvbox.vim'
 
 " Great file system explorer, it appears when you open dir in vim
 Plug 'scrooloose/nerdtree'
-
+Plug 'jistr/vim-nerdtree-tabs'
 "========================================================
 "  HTML
 "========================================================
