@@ -1,6 +1,27 @@
 let mapleader=" "
 
 "========================================================
+" Tabs navigation
+"========================================================
+" TAB in general mode will move to text buffer
+nnoremap <TAB> :bnext<CR>
+" SHIFT-TAB will go back
+nnoremap <S-TAB> :bprevious<CR>
+
+"========================================================
+" COC
+"========================================================
+" Remap keys for gotos
+nmap <silent> gd <Plug>(coc-definition)
+nmap <silent> gy <Plug>(coc-type-definition)
+nmap <silent> gi <Plug>(coc-implementation)
+nmap <silent> gr <Plug>(coc-references)
+
+" <TAB>: completion.
+inoremap <expr><TAB> pumvisible() ? "\<C-n>" : "\<TAB>"
+
+
+"========================================================
 " Fugitive
 "========================================================
 
@@ -26,6 +47,7 @@ nnoremap <Leader>G :G<cr>
 nnoremap <Leader>gp :Gpush<cr>
 nnoremap <Leader>gl :Gpull<cr>
 
+nnoremap <C-p> :GFiles<CR>
 
 
 "========================================================
@@ -43,6 +65,7 @@ nnoremap <Leader>; $a;<Esc>
 nnoremap <Leader>w :w<CR>
 nnoremap <Leader>q :q<CR>
 nnoremap <Leader>Q :q!<CR>
+
 " shorter commands
 cnoreabbrev tree NERDTreeToggle
 cnoreabbrev blame Gblame
@@ -54,20 +77,10 @@ map <Leader>nt :NERDTreeFind<CR>
 map <Leader>p :Files<CR>
 map <Leader>ag :Ag<CR>
 
-" Remap keys for gotos
-nmap <silent> gd <Plug>(coc-definition)
-nmap <silent> gy <Plug>(coc-type-definition)
-nmap <silent> gi <Plug>(coc-implementation)
-nmap <silent> gr <Plug>(coc-references)
-
 " Remap surround to lowercase s so it does not add an empty space
 xmap s <Plug>VSurround
 " diagnostics
 nnoremap <leader>P :let @*=expand("%")<CR>
-
-" tabs navigation
-map <Leader>h :tabprevious<cr>
-map <Leader>l :tabnext<cr>
 
 " buffers
 map <Leader>ob :Buffers<cr>
