@@ -1,3 +1,4 @@
+" let g:python3_host_prog='/usr/bin/python'
 " set leader key
 let g:mapleader = "\<Space>"
 
@@ -22,7 +23,7 @@ set expandtab                           " Converts tabs to spaces
 set smartindent                         " Makes indenting smart
 set autoindent                          " Good auto indent
 set laststatus=0                        " Always display the status line
-set number                              " Line numbers
+set number relativenumber               " Line numbers and relative
 set cursorline                          " Enable highlighting of the current line
 set background=dark                     " tell vim what the background color looks like
 set showtabline=2                       " Always show tabs

@@ -5,6 +5,7 @@
   [
     "UltiSnips",
     "~/.config/nvim/utils/snips"
-  ]
+  ],
+  "snippets.ultisnips.usePythonx": false
 
 }

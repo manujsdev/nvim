@@ -9,6 +9,15 @@ nnoremap <TAB> :bnext<CR>
 nnoremap <S-TAB> :bprevious<CR>
 
 "========================================================
+" NERDTree
+"========================================================
+" Toggle
+nnoremap <silent> <C-b> :NERDTreeToggle<CR>
+" Split Navigation commands
+nnoremap <A-Right> <C-w>l
+nnoremap <A-Left> <C-w>h
+
+"========================================================
 " COC
 "========================================================
 " Remap keys for gotos
